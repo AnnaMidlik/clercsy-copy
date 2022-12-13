@@ -1,0 +1,30 @@
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: whitesmoke;
+  left: 50%;
+  bottom: -5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.btn {
+  background: linear-gradient(to left, #198C36 50%, #15762e 50%);
+  transition: all ease-in-out 600ms;
+  background-position: right top;
+  background-size: 200% 100%;
+}
+
+.btn:hover {
+  background-position: left top;
+}
